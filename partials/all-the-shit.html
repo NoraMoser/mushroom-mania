@@ -4,3 +4,9 @@
 <input type="radio" name="mushroom" value="poisonous">Poisonous<br>
 <input type="radio" name="mushroom" value="non-poisonous">Non-Poisonous
 </div>
+
+<div ng-repeat="item in mushroom">
+        <!-- <a href="#/item/{{ item.name }}">{{ item.name }}</a> -->
+        <h2>{{ item.name }}</h2>
+        <h3>{{ item.description }}</h3>
+</div>

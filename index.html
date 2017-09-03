@@ -7,15 +7,18 @@
 </head>
 <body ng-app="mushroom-mania">
     <h1>Mushroom Mania!</h1>
-    <div ng-include="'partials/all-the-shit.html'"></div>
-    
+    <!-- <div ng-include="'partials/all-the-shit.html'"></div> -->
 
+    <div ng-view></div>
+    
+    
+    
+    
+    
     <script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
 	<script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
     
     <script type="text/javascript" src="app/app.js"></script>
-    <!-- <script src="app/values/firebase-stuff.js"></script> -->
-
     <!-- factories -->
     <script src="app/factory/mushroom-factory.js"></script>
      <!-- controllers -->

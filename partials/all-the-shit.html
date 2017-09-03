@@ -1,11 +1,12 @@
 
 <div>
 <!-- <input type="text"><br> -->
-<input type="radio" name="mushroom" value="poisonous">Poisonous<br>
-<input type="radio" name="mushroom" value="non-poisonous">Non-Poisonous
+<input type="text" ng-model="search"><br>
+<input type="radio" name="mushroom" ng-model="type" value="false">Poisonous<br>
+<input type="radio" name="mushroom" ng-model="type" value="true">Non-Poisonous
 </div>
 
-<div ng-repeat="item in mushroom">
+<div ng-repeat="item in mushroom | filter:search | filter:type">
         <!-- <a href="#/item/{{ item.name }}">{{ item.name }}</a> -->
         <h2>{{ item.name }}</h2>
         <h3>{{ item.description }}</h3>

@@ -1,6 +1,7 @@
 "use strict";
 // Control the views
 console.log("MushroomCtrl");
+let arrayOfMushrooms = [];
 
 app.controller("MushroomCtrl", function($scope, MushroomDirectory){
         // this is like the module exports (FlavorFactory)
